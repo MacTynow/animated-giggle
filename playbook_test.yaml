@@ -15,4 +15,4 @@
     # - name: Server disk usage
     #   bash: du -h
     - name: Say hello
-      bash: echo "Hello ${hostname}"
+      bash: echo "Hello World"
