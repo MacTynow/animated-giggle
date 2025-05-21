@@ -16,4 +16,4 @@
 - hosts: loadbalancers
   tasks:
     - name: Install nginx
-      bash: apt update && apt install nginx -y
+      bash: apt-get update && apt-get install nginx -y
