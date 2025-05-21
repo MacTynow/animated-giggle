@@ -3,8 +3,6 @@
   tasks:
     - name: Server uptime
       bash: uptime
-    # - name: Server disk usage
-    #   bash: du -h
     - name: Server memory usage
       bash: free -m
 
@@ -12,7 +10,10 @@
   tasks:
     - name: Server uptime
       bash: uptime
-    # - name: Server disk usage
-    #   bash: du -h
     - name: Say hello
       bash: echo "Hello World"
+
+- hosts: loadbalancers
+  tasks:
+    - name: Install nginx
+      bash: apt install nginx -y
